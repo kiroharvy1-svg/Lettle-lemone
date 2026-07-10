@@ -280,6 +280,9 @@ input[type="submit"]{
 }
 @media (max-width: 768px)  {
     .nav-links{
-    max-width: 100%;
+      flex-direction: column;
+      gap: 10px;
+      width: 90%;
+      margin: 0 auto;
     }
 }
