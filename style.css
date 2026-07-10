@@ -291,5 +291,9 @@ input[type="submit"]{
     .img{
         width: 100%;
         height: auto;
+        max-width: 80%;
+        min-width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 }
