@@ -288,10 +288,10 @@ input[type="submit"]{
     }
 }
 @media (max-width: 768px)  {
-    .img{
-        width: 100%;
+    .img, .opening-days{
+       padding: 20px;
         height: auto;
-        max-width: 80%;
+        max-width: 90%;
         min-width: 80%;
         display: block;
         margin: 0 auto;
