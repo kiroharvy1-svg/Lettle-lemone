@@ -38,7 +38,7 @@ body{
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    max-width: 50%;
+    max-width: 80%;
 }
 .banner{
     display: inline-block;
@@ -262,12 +262,24 @@ input[type="submit"]{
     
 }
 @media (max-width: 768px) {
- .about, .main_menu{
+ .about, .main_menu {
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 }
 .about >div{
     flex:0 2% 45% ;
     min-width: 200px;
+}
+@media (max-width: 768px)  {
+    .small-logo{
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 768px)  {
+    .nav-links{
+    max-width: 100%;
+    }
 }
