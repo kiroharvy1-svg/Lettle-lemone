@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lettle lemone </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lettle lemone is a Resturant that makes pastas, pizzas and salads. We are located in the heart of the city and we are open from 11am to 10pm every day.">
+    <meta name="keywords" content="Lettle lemone, Resturant, pastas, pizzas, salads, city, open, 11am, 10pm">
+    <meta name="author" content="Lettle lemone">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="toggleCart()" class="cart-btn">My Cart</button>
+
+<div id="cart-items" class="cart-box" style="display: none;">
+    <strong>Your Orders:</strong>
+    <div id="cart-content"></div>
+</div>
+ <header>
+    <div class="logo">
+     <img src="Asset 16@4x.png"  width="450" height="200" >
+    </div>
+</br>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<div class="main_menu" >
+    <div class="kofta">
+
+        <img src="kofta.jpeg" width="300" height="200" class="img_2" >
+        <h2> kofta with tahin sauce with</h2>
+        <h2> some rice and bread</h2>
+
+
+        <div class="price">
+            <h2 class="price_2">price</h2>
+    <h3> Quantity: price    </h3>
+            <h3>250 g : 80 EG</h3>
+            <h3>500 g : 160 EG </h3>
+            <h3> 1  k : 300 EG</h3>
+        </div>
+        <button class="btn" onclick="App_Click('kofta')" >Order now</button>
+    </div>
+
+   <div class="pasta" >
+ <img src="pasta.jpeg" width="300" height="200" class="img_2">
+ <h2> pasta with pepperoni and </h2>
+ <h2> our italyan red sauce</h2>
+
+ <div class="price">
+
+    <h2 class="price_2"> Price </h2>
+    <h3>Quantity: price</h3>
+    <h3>Small : 150 EG</h3>
+    <h3> Mid  : 200 EG</h3>
+    <h3> Big  : 250 EG</h3>
+ </div>
+ <button class="btn" onclick="App_Click('pasta')" >Order now</button>
+   </div>
+
+ <div class="chicken">
+
+ <img src="Chicken.jpeg" width="300" height="200" class="img_2" >
+
+ <h2>chicken with rice and   </h2>
+<h2>some salad</h2>
+ <div class="price">
+    <h2 class="price_2" >price</h2>
+    <h3> Quantity: price    </h3>
+    <h3> 250 g   :  90 EG</h3>
+    <h3> 500 g   : 180 EG</h3>
+    <h3>  1  k   : 320 EG</h3>
+ </div>
+<button class="btn" onclick="App_Click('chicken')" >Order now</button>
+ </div> 
+
+</div>
+
+
+<footer class="footer">
+    <div class="small-logo">
+    <img src="Asset 20@4x.png" width="100" height="150">
+    </div>
+    <div class="copy">
+    <p>_________________________</p>
+    <p> Lettle lemone copy Right 2024</p>
+    
+    </div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
