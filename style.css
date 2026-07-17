@@ -307,7 +307,7 @@ input[type="submit"]{
       gap: 10px;
       width: 90%;
       margin: 0 auto;
-      margin-bottom: 2%;
+      margin-bottom: 4%;
     }
 }
 @media (max-width: 768px)  {
