@@ -74,12 +74,16 @@ body{
     box-sizing: border-box;
 }
 
+.link a{
+    direction: none;
+}
 .link a:hover{
     background-color: rgb(211, 124, 124) ;
     color: greenyellow;
     border-radius: 9px;
     box-sizing: border-box;
     transition:0.5s;
+    direction: none;
 }
 
 .small-logo{
@@ -138,11 +142,21 @@ footer{
     gap: 90px;
     
  }
+ .main_menu:hover .kofta:not(:hover),
+ .main_menu:hover .pasta:not(:hover),
+ .main_menu:hover .chicken:not(:hover){
+ filter: blur(4px) grayscale(20%);       
+ opacity: 0.6;
+}
+ .kofta, .pasta, .chicken{
+    transition: transform 0.3s ease;
+ }
  .kofta:hover{
     border-radius: 13px;
     background-color:rgb(211, 124, 124)  ;
     color: white;
     box-sizing: border-box;
+   transform: scale(1.05);
  }
 
 .pasta:hover{
@@ -150,12 +164,14 @@ footer{
     background-color:rgb(211, 124, 124)  ;
     color: white;
     box-sizing: border-box;
+    transform: scale(1.05);
 }
 .chicken:hover{
     border-radius: 13px;
     background-color:rgb(211, 124, 124)  ;
     color: white;
     box-sizing: border-box;
+    transform: scale(1.05);
 }
 .price_2{
  color: green;
@@ -289,7 +305,7 @@ input[type="submit"]{
 }
 @media (max-width: 768px)  {
     .img, .opening-days{
-       padding: 20px;
+        padding: 20px;
         height: auto;
         max-width: 90%;
         min-width: 80%;
