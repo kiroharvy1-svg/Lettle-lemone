@@ -11,7 +11,11 @@ body{
     width: 80%;
     background-color: antiquewhite;
 }
-
+.btn_6{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
 .logo{
     display: flex;
     justify-content: center;
@@ -74,16 +78,12 @@ body{
     box-sizing: border-box;
 }
 
-.link a{
-    direction: none;
-}
 .link a:hover{
     background-color: rgb(211, 124, 124) ;
     color: greenyellow;
     border-radius: 9px;
     box-sizing: border-box;
     transition:0.5s;
-    direction: none;
 }
 
 .small-logo{
@@ -279,10 +279,17 @@ input[type="submit"]{
 }
 @media (max-width: 768px) {
  .about, .main_menu {
-    flex-wrap: wrap;
-    justify-content: center;
-   
-}
+     flex-wrap: wrap;
+     justify-content: center;
+     margin-top: 2%;  
+     }
+     .main_menu:hover .kofta:not(:hover),
+     .main_menu:hover .pasta:not(:hover),
+     .main_menu:hover .chicken:not(:hover){
+      filter: none;       
+      opacity: 1 ;
+    }
+
 }
 .about >div{
     flex:0 2% 45% ;
